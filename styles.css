@@ -1,0 +1,131 @@
+
+/* 4.1 Cabecera  */
+p {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    background-color: #807c7c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* 4.2 Propiedades de texto  */
+p1 {
+    font-size: 40px; 
+    display: flex;
+    text-transform: capitalize;
+    text-decoration:wavy;
+}
+
+blockquote1 {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+}
+
+/* 4.3 Propiedades de Caja  */
+.caja-normal {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.caja-destacada {
+    padding: 30px;
+    margin: 20px;
+    border: 3px solid #ff0000;
+    background-color: #ffcccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 4.4 Posición Relativa y Absoluta  */
+.relativo {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.absoluto {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #b0c4de;
+    padding: 10px;
+}
+
+/* 4.5 Media Queries  */
+@media (max-width: 768px) {
+    body {
+        background-color: #e0f7fa;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* 4.6 Principios de Grid  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #a3d5d3;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 4.7 Principios de Animaciones  */
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #00bcd4;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #ff5722;
+}
+
+.mover {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    position: relative;
+    animation: moverDerIzq 3s infinite alternate linear;
+    
+}
+
+@keyframes moverDerIzq {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+    
+    
+}
+
+
